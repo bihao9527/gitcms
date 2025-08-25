@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap');
+ 
+@layer base {
+  :root {
+    /* 国学风水主题色彩系统 */
+    --background: 48 30% 98%;           /* 温润米白 */
+    --foreground: 30 8% 15%;            /* 深墨色 */
+
+    --card: 48 20% 97%;                 /* 素雅卡片背景 */
+    --card-foreground: 30 8% 15%;
+ 
+    --popover: 48 20% 97%;
+    --popover-foreground: 30 8% 15%;
+ 
+    --primary: 45 100% 30%;             /* 古典金色 */
+    --primary-foreground: 48 30% 98%;
+ 
+    --secondary: 45 30% 92%;            /* 淡雅金色背景 */
+    --secondary-foreground: 30 8% 20%;
+ 
+    --muted: 45 15% 95%;                /* 淡雅背景 */
+    --muted-foreground: 30 5% 45%;
+ 
+    --accent: 15 50% 50%;               /* 朱砂红 */
+    --accent-foreground: 48 30% 98%;
+ 
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 48 30% 98%;
+
+    --border: 45 20% 88%;               /* 淡金边框 */
+    --input: 45 20% 90%;
+    --ring: 45 100% 30%;
+ 
+    --radius: 0.75rem;                  /* 更圆润的边角 */
+    
+    /* 国学风水专用颜色 */
+    --imperial-gold: 45 100% 30%;       /* 帝王金 */
+    --cinnabar-red: 15 80% 50%;         /* 朱砂红 */
+    --jade-green: 140 30% 40%;          /* 翡翠绿 */
+    --ink-black: 30 8% 15%;             /* 墨黑 */
+    --rice-white: 48 30% 98%;           /* 米白 */
+    --bamboo-green: 120 20% 45%;        /* 竹青 */
+    --bronze-brown: 25 35% 35%;         /* 青铜 */
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1.7;
+  }
+  
+  /* 国学风格字体设置 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* 国学风格实用类 */
+  .chinese-border {
+    border: 2px solid hsl(var(--imperial-gold));
+    border-image: linear-gradient(45deg, 
+      hsl(var(--imperial-gold)), 
+      hsl(var(--cinnabar-red)), 
+      hsl(var(--imperial-gold))
+    ) 1;
+  }
+  
+  .traditional-shadow {
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .traditional-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--rice-white)) 0%, 
+      hsl(var(--secondary)) 100%);
+  }
+  
+  .golden-text {
+    background: linear-gradient(45deg, 
+      hsl(var(--imperial-gold)), 
+      hsl(var(--cinnabar-red)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bamboo-divider {
+    height: 2px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      hsl(var(--bamboo-green)) 20%, 
+      hsl(var(--jade-green)) 50%, 
+      hsl(var(--bamboo-green)) 80%, 
+      transparent 100%);
+  }
+  
+  /* 装饰性花纹边框 */
+  .ornate-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+      hsl(var(--imperial-gold)), 
+      hsl(var(--cinnabar-red)), 
+      hsl(var(--jade-green)), 
+      hsl(var(--imperial-gold)));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  /* 传统文字阴影 */
+  .traditional-text-shadow {
+    text-shadow: 
+      1px 1px 2px rgba(0, 0, 0, 0.1),
+      0 0 4px rgba(255, 215, 0, 0.2);
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "周易研究网",
+    "description": "专业的周易文化研究平台，提供易经、八卦、六爻等传统文化知识",
+    "url": "https://www.zhouyi.com/"
+  },
+  {
+    "name": "风水学院",
+    "description": "系统学习风水理论，包括阳宅风水、阴宅风水、商业风水等专业课程",
+    "url": "https://www.fengshuixueyuan.com/"
+  },
+  {
+    "name": "命理百科",
+    "description": "全面的命理知识库，涵盖八字、紫微斗数、六爻、奇门遁甲等",
+    "url": "https://www.minglibaike.com/"
+  },
+  {
+    "name": "中华文化网",
+    "description": "传承中华传统文化，弘扬国学经典，提供丰富的文化资源",
+    "url": "https://www.zhonghuawenhua.com/"
+  },
+  {
+    "name": "玄学论坛",
+    "description": "玄学爱好者交流平台，分享风水、命理、占卜等玄学知识",
+    "url": "https://www.xuanxuebbs.com/"
+  },
+  {
+    "name": "国学经典",
+    "description": "收录四书五经、诸子百家等国学经典著作，传承中华文化精髓",
+    "url": "https://www.guoxuejingdian.com/"
+  },
+  {
+    "name": "易学研究中心",
+    "description": "专业的易学研究机构，提供易经、风水、命理等学术研究",
+    "url": "https://www.yixueyanjiu.com/"
+  }
+]
