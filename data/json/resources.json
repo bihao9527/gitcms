@@ -33,5 +33,10 @@
     "name": "易学研究中心",
     "description": "专业的易学研究机构，提供易经、风水、命理等学术研究",
     "url": "https://www.yixueyanjiu.com/"
+  },
+  {
+    "name": "测试1",
+    "description": "测hi",
+    "url": "\thttps://www.yixueyanjiu.com/"
   }
 ]
