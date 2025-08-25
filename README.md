@@ -34,6 +34,9 @@
    ```
    git clone https://github.com/qiayue/gitbase.git
    cd gitbase
+   
+   git clone https://github.com/bihao9527/gitcms.git
+   cd gitcms
    ```
 
 2. 安装依赖:
@@ -43,10 +46,12 @@
 
 3. 在根目录创建 `.env.local` 文件，并添加以下内容:
    ```
+   DOMAIN=你的域名
    GITHUB_TOKEN=你的github个人访问令牌
    GITHUB_OWNER=你的github用户名
    GITHUB_REPO=你的仓库名称
    ACCESS_PASSWORD=你的安全访问密码
+   JWT_SECRET=your_jwt_secret
    ```
 
 4. 设置GitHub仓库:
