@@ -48,7 +48,7 @@ export default function Home() {
           {/* 副标题装饰 */}
           <div className="relative">
             <h2 className="text-2xl tracking-widest sm:text-3xl md:text-4xl lg:text-4xl text-gray-700 font-medium">
-              專業風水命理知識平臺
+              專業風水命理平臺
             </h2>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
           </div>
@@ -280,6 +280,67 @@ export default function Home() {
         </section>
 
         <ArticleList articles={allPostsData} />
+
+        {/* 服务方式 */}
+        <section className="relative">
+          {/* 标题装饰 */}
+          <div className="flex items-center justify-center mb-16">
+            <div className="flex-1 bamboo-divider max-w-64"></div>
+            <div className="mx-8 text-2xl golden-text font-bold">✦ 服务方式 ✦</div>
+            <div className="flex-1 bamboo-divider max-w-64"></div>
+          </div>
+
+          <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/50 backdrop-blur-sm">
+            <p className="text-gray-700 md:text-xl leading-relaxed font-medium mb-8">
+              为了满足不同地区客户的需求，我们特别推出了便捷的线上八字解读服务。无论您身处世界的任何角落，都可以通过微信，WhatsApp、LINE
+              等线上平台，进行八字命理咨询，方便快捷。您只需选择适合的时间和平台，即可轻松与我们的一对一命理师进行交流。
+            </p>
+
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4 traditional-text-shadow">
+                歡迎預約一對一咨詢服務
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">联系一对一咨询服务</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg font-medium text-gray-700">LINE:</span>
+                  <span className="text-lg font-bold text-green-600">@703utvtx</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg font-medium text-gray-700">WhatsApp:</span>
+                  <span className="text-lg font-bold text-green-600">+852 6186 4975</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 二维码 */}
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+              <div className="text-center">
+                <img
+                  src="https://i.postimg.cc/3r9tGmZ2/line.png"
+                  alt="LINE二维码"
+                  className="w-48 h-48 mx-auto rounded-lg shadow-lg"
+                />
+                <p className="mt-2 text-sm text-gray-600">LINE 二维码</p>
+              </div>
+              <div className="text-center">
+                <img
+                  src="https://i.postimg.cc/nLCx8ncP/WhatsApp.png"
+                  alt="WhatsApp二维码"
+                  className="w-48 h-48 mx-auto rounded-lg shadow-lg"
+                />
+                <p className="mt-2 text-sm text-gray-600">WhatsApp 二维码</p>
+              </div>
+            </div>
+
+            {/* 装饰性角标 */}
+            <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-amber-500"></div>
+            <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-amber-500"></div>
+            <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-amber-500"></div>
+            <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-amber-500"></div>
+          </div>
+        </section>
+
         <ResourceList resources={resources} />
       </div>
     </div>
