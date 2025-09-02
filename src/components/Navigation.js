@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 
 const navItems = [
   { path: '/', label: '首页' },
-  { path: '/resources', label: '资源' },
+  // { path: '/resources', label: '资源' }, // 屏蔽资源菜单
   { path: '/posts', label: '文章' },
 ]
 

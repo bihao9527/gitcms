@@ -37,12 +37,12 @@ export function Footer() {
                   首页
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/resources" className="group flex items-center text-gray-700 hover:text-amber-700 transition-colors duration-300">
                   <span className="w-2 h-2 bg-amber-400 rounded-full mr-3 group-hover:bg-amber-600 transition-colors duration-300"></span>
                   资源
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/posts" className="group flex items-center text-gray-700 hover:text-amber-700 transition-colors duration-300">
                   <span className="w-2 h-2 bg-amber-400 rounded-full mr-3 group-hover:bg-amber-600 transition-colors duration-300"></span>
