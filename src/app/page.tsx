@@ -23,7 +23,7 @@ export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 6)
 
   return (
-    <div className="min-h-screen traditional-gradient">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-green-100">
       {/* 传统装饰背景 */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 rounded-full border-2 border-current opacity-20"></div>
