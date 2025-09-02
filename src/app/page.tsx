@@ -341,7 +341,7 @@ export default function Home() {
           </div>
         </section>
 
-        <ResourceList resources={resources} />
+        {/* <ResourceList resources={resources} />  // 屏蔽精选资源模块 */}
       </div>
     </div>
   )
