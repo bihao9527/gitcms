@@ -143,6 +143,142 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 八字命理详细介绍 */}
+        <section className="relative">
+          {/* 标题装饰 */}
+          <div className="flex items-center justify-center mb-16">
+            <div className="flex-1 bamboo-divider max-w-64"></div>
+            <div className="mx-8 text-2xl golden-text font-bold">✦ 八字命理深度解析 ✦</div>
+            <div className="flex-1 bamboo-divider max-w-64"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* 性格分析 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-amber-50/90 to-orange-50/90 border border-amber-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white text-2xl">
+                    😊
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-amber-800 traditional-text-shadow">性格分析</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  通过八字解析，你可以了解自己的性格特点和优势，这有助于你更好地认识自己，发挥自己的潜力不足之处，走出困境重获新的发展和行为，提高自己的素质和能力
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-amber-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-amber-400 opacity-60"></div>
+              </div>
+            </div>
+
+            {/* 事业财运 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-green-50/90 to-emerald-50/90 border border-green-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white text-2xl">
+                    💰
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-green-800 traditional-text-shadow">事业财运</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  通过分析八字，可以发现你的事业运势和财富机会点，从而选择出合适的行业职业建议，了解自己是打工还是做生意？爱好经营还是早期合伙人一起做？
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-green-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-green-400 opacity-60"></div>
+              </div>
+            </div>
+
+            {/* 人生大运 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-blue-50/90 to-cyan-50/90 border border-blue-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-white text-2xl">
+                    🗺️
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-blue-800 traditional-text-shadow">人生大运</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  八字推算能为你预测未来的人生大运，提示你的命运轨迹，让你有充分的准备，迎接人生的机遇
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-blue-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-blue-400 opacity-60"></div>
+              </div>
+            </div>
+
+            {/* 婚姻 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-pink-50/90 to-rose-50/90 border border-pink-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-white text-2xl">
+                    ❤️
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-pink-800 traditional-text-shadow">婚姻</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  根据八字命盘，全面分析婚姻情况，对婚姻吉凶，结婚时间等等与婚姻有关的事情出具解释
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-pink-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-pink-400 opacity-60"></div>
+              </div>
+            </div>
+
+            {/* 六亲 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-purple-50/90 to-violet-50/90 border border-purple-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-violet-500 flex items-center justify-center text-white text-2xl">
+                    👥
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-purple-800 traditional-text-shadow">六亲</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  预测与父母大夫，妻子可能孩子女关系，同时，八字推断可以让你了解你的性格特点未来发展潜能，让你更好地育及发展
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-purple-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-purple-400 opacity-60"></div>
+              </div>
+            </div>
+
+            {/* 健康 */}
+            <div className="relative group">
+              <div className="traditional-shadow rounded-3xl p-8 bg-gradient-to-br from-red-50/90 to-orange-50/90 border border-red-200/60 backdrop-blur-sm hover:scale-105 transition-all duration-500">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-400 to-orange-500 flex items-center justify-center text-white text-2xl">
+                    🏥
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-4 text-red-800 traditional-text-shadow">健康</h3>
+                <p className="text-gray-700 leading-relaxed text-center mb-4">
+                  为预防疾病，健康和孕妇等等层面，了解自己潜在的健康状况，可以让你有针对性地调整生活方式，提高生活质量
+                </p>
+                {/* 装饰角标 */}
+                <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-red-400 opacity-60"></div>
+                <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-red-400 opacity-60"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* 底部总结 */}
+          <div className="mt-16 text-center">
+            <div className="relative mx-auto max-w-4xl p-8 rounded-2xl traditional-shadow bg-gradient-to-r from-amber-50/80 via-white/80 to-amber-50/80 backdrop-blur-sm border border-amber-200/50">
+              <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                <span className="text-amber-700 font-bold">八字命理</span>作为中华传统文化的瑰宝，能够为您提供全方位的人生指导。
+                通过深入分析您的生辰八字，我们为您揭示性格特质、事业方向、财运机遇、婚姻情感、人际关系和健康状况，
+                助您在人生的各个阶段都能<span className="text-amber-700 font-bold">趋吉避凶，把握先机</span>。
+              </p>
+              {/* 装饰性角标 */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-l-3 border-t-3 border-amber-500 opacity-60"></div>
+              <div className="absolute top-0 right-0 w-8 h-8 border-r-3 border-t-3 border-amber-500 opacity-60"></div>
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-l-3 border-b-3 border-amber-500 opacity-60"></div>
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-r-3 border-b-3 border-amber-500 opacity-60"></div>
+            </div>
+          </div>
+        </section>
+
         <ArticleList articles={allPostsData} />
         <ResourceList resources={resources} />
       </div>
