@@ -279,8 +279,6 @@ export default function Home() {
           </div>
         </section>
 
-        <ArticleList articles={allPostsData} />
-
         {/* 服务方式 */}
         <section className="relative">
           {/* 标题装饰 */}
@@ -340,6 +338,8 @@ export default function Home() {
             <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-amber-500"></div>
           </div>
         </section>
+
+        <ArticleList articles={allPostsData} />
 
         {/* <ResourceList resources={resources} />  // 屏蔽精选资源模块 */}
       </div>
