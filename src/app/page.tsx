@@ -8,21 +8,21 @@ import StructuredData from '@/components/StructuredData'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '风水命理_八字命理_玄易阁专业风水大师在线咨询',
-  description: '玄易阁专业风水命理平台，提供八字算命、家居风水、办公风水、起名改名、择吉日、道家科仪等服务。资深风水大师在线咨询，传承中华传统文化，助您趋吉避凶，提升运势。',
+  title: '风水命理_八字命理_坤舆道专业风水大师在线咨询',
+  description: '坤舆道专业风水命理平台，提供八字算命、家居风水、办公风水、起名改名、择吉日、道家科仪等服务。资深风水大师在线咨询，传承中华传统文化，助您趋吉避凶，提升运势。',
   keywords: '风水命理,八字命理,风水大师,算命,生辰八字,家居风水,办公风水,起名改名,择吉日,五行,天干地支,周易,玄学,运势测算,风水布局,风水调理,道家科仪,六爻问事,吉物开光',
   openGraph: {
-    title: '风水命理_八字命理_玄易阁专业风水大师在线咨询',
+    title: '风水命理_八字命理_坤舆道专业风水大师在线咨询',
     description: '专业风水命理平台，提供八字算命、家居风水、办公风水等服务。资深风水大师在线咨询，传承中华传统文化。',
     type: 'website',
     url: 'https://xuanyige.com',
-    siteName: '玄易阁风水命理',
+    siteName: '坤舆道风水命理',
     images: [
       {
         url: '/og-homepage.jpg',
         width: 1200,
         height: 630,
-        alt: '玄易阁风水命理首页',
+        alt: '坤舆道风水命理首页',
       },
     ],
   },
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           
           <h1 className="text-5xl font-bold tracking-wider sm:text-6xl md:text-7xl lg:text-8xl golden-text traditional-text-shadow">
-            玄易阁
+            坤舆道
           </h1>
           
           {/* 副标题装饰 */}
@@ -342,7 +342,7 @@ export default function Home() {
               <div className="text-center">
                 <img
                   src="https://i.postimg.cc/3r9tGmZ2/line.png"
-                  alt="玄易阁风水大师LINE二维码 专业八字命理咨询"
+                  alt="坤舆道风水大师LINE二维码 专业八字命理咨询"
                   className="w-48 h-48 mx-auto rounded-lg shadow-lg"
                 />
                 <p className="mt-2 text-sm text-gray-600">LINE 二维码</p>
@@ -350,7 +350,7 @@ export default function Home() {
               <div className="text-center">
                 <img
                   src="https://i.postimg.cc/nLCx8ncP/WhatsApp.png"
-                  alt="玄易阁风水大师WhatsApp二维码 专业风水命理算命咨询"
+                  alt="坤舆道风水大师WhatsApp二维码 专业风水命理算命咨询"
                   className="w-48 h-48 mx-auto rounded-lg shadow-lg"
                 />
                 <p className="mt-2 text-sm text-gray-600">WhatsApp 二维码</p>
@@ -371,7 +371,7 @@ export default function Home() {
         <section className="relative">
           <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/30 backdrop-blur-sm">
             <p className="text-gray-600 text-center leading-relaxed">
-              玄易阁是专业的风水命理平台，拥有资深的风水大师团队，提供全方位的八字算命、家居风水、办公风水、起名改名、择吉日等服务。
+              坤舆道是专业的风水命理平台，拥有资深的风水大师团队，提供全方位的八字算命、家居风水、办公风水、起名改名、择吉日等服务。
               我们传承中华传统文化精髓，结合现代科学理念，为全球客户提供专业准确的风水命理咨询服务。
               无论您需要生辰八字分析、风水布局调整，还是起名改名指导，我们都能为您提供个性化的解决方案，助您趋吉避凶，提升运势。
             </p>

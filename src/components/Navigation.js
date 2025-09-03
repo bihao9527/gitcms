@@ -58,7 +58,7 @@ export function Navigation() {
         <div className="flex gap-8 md:gap-12 items-center">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <span className="text-2xl font-bold golden-text traditional-text-shadow tracking-wider">玄易阁</span>
+              <span className="text-2xl font-bold golden-text traditional-text-shadow tracking-wider">坤舆道</span>
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </Link>

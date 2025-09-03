@@ -23,7 +23,7 @@ export function Footer() {
             <h3 className="text-lg font-bold golden-text traditional-text-shadow mb-4 tracking-wider">关于我们</h3>
             <div className="w-12 h-0.5 bg-amber-500 mb-6"></div>
             <p className="text-gray-700 leading-relaxed font-medium">
-              玄易阁是专业的风水命理知识平台，传承中华传统文化精髓，融合现代科学理念，为您提供专业的风水理论、八字命理、家居布局、办公环境等知识。
+              坤舆道是专业的风水命理知识平台，传承中华传统文化精髓，融合现代科学理念，为您提供专业的风水理论、八字命理、家居布局、办公环境等知识。
             </p>
             <div className="absolute top-0 right-0 w-3 h-3 border-r-2 border-t-2 border-amber-400 opacity-30"></div>
           </div>
@@ -59,7 +59,7 @@ export function Footer() {
               <li>
                 <a href="/" className="group flex items-center text-gray-700 hover:text-amber-700 transition-colors duration-300">
                   <span className="w-2 h-2 bg-amber-400 rounded-full mr-3 group-hover:bg-amber-600 transition-colors duration-300"></span>
-                  玄易阁官网
+                  坤舆道官网
                 </a>
               </li>
               {/* 暂时隐藏GitHub链接 */}
@@ -89,7 +89,7 @@ export function Footer() {
         
         <div className="relative p-6 rounded-xl bg-gradient-to-r from-amber-50/30 to-amber-100/30 border border-amber-200/30 traditional-shadow">
           <p className="text-center text-gray-600 font-medium">
-            &copy; {new Date().getFullYear()} 玄易阁 · 传承中华文化 · 保留所有权利
+            &copy; {new Date().getFullYear()} 坤舆道 · 传承中华文化 · 保留所有权利
           </p>
           <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-amber-400 opacity-40"></div>
           <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-amber-400 opacity-40"></div>
