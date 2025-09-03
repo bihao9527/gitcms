@@ -1,5 +1,12 @@
-User-agent: *
-Allow: /
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /private/
+
+
+#User-agent: *
+#Allow: /
 
 # 主要页面
 Allow: /posts
