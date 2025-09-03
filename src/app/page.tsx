@@ -4,16 +4,27 @@ import path from 'path'
 import { getSortedPostsData } from '@/lib/posts'
 import ResourceList from '@/components/ResourceList'
 import ArticleList from '@/components/ArticleList'
+import StructuredData from '@/components/StructuredData'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '玄易阁 - 专业风水命理知识平台 | 传承中华传统文化',
-  description: '玄易阁是专业的风水命理知识平台，提供风水理论、八字命理、家居布局、办公环境等专业知识。传承中华传统文化，结合现代科学，为您的生活和工作提供智慧指导。',
-  keywords: '风水,命理,八字,玄学,中华文化,家居风水,办公风水,阴阳五行,天干地支,周易',
+  title: '风水命理_八字命理_玄易阁专业风水大师在线咨询',
+  description: '玄易阁专业风水命理平台，提供八字算命、家居风水、办公风水、起名改名、择吉日、道家科仪等服务。资深风水大师在线咨询，传承中华传统文化，助您趋吉避凶，提升运势。',
+  keywords: '风水命理,八字命理,风水大师,算命,生辰八字,家居风水,办公风水,起名改名,择吉日,五行,天干地支,周易,玄学,运势测算,风水布局,风水调理,道家科仪,六爻问事,吉物开光',
   openGraph: {
-    title: '玄易阁 - 专业风水命理知识平台',
-    description: '传承中华传统文化，结合现代科学，为您的生活和工作提供智慧指导',
+    title: '风水命理_八字命理_玄易阁专业风水大师在线咨询',
+    description: '专业风水命理平台，提供八字算命、家居风水、办公风水等服务。资深风水大师在线咨询，传承中华传统文化。',
     type: 'website',
+    url: 'https://xuanyige.com',
+    siteName: '玄易阁风水命理',
+    images: [
+      {
+        url: '/og-homepage.jpg',
+        width: 1200,
+        height: 630,
+        alt: '玄易阁风水命理首页',
+      },
+    ],
   },
 }
 
@@ -23,7 +34,11 @@ export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 6)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-green-100">
+    <>
+      <StructuredData type="website" data={{}} />
+      <StructuredData type="organization" data={{}} />
+      <StructuredData type="service" data={{}} />
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-green-100">
       {/* 传统装饰背景 */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 rounded-full border-2 border-current opacity-20"></div>
@@ -48,15 +63,26 @@ export default function Home() {
           {/* 副标题装饰 */}
           <div className="relative">
             <h2 className="text-2xl tracking-widest sm:text-3xl md:text-4xl lg:text-4xl text-gray-700 font-medium">
-              專業風水命理平臺
+              專業風水命理大師平台
             </h2>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
           </div>
           
           <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/50 backdrop-blur-sm">
             <p className="text-gray-700 md:text-xl leading-relaxed font-medium">
-              玄易閣傳承道教文化精髓，專精八字命理、風水勘察、道家科儀等傳統學術。囊括一生財運、事業、健康壽命、婚姻感情、五行缺失、一生命盤、流年運勢等各個方面。基於生辰八字，我們為您提供量身定制的解決方案，助您早日實現目標，提升生活質量。
+              玄易閣傳承道教文化精髓，專精八字命理、風水勘察、道家科儀等傳統學術。提供專業的風水大師在線諮詢服務，包括家居風水、辦公風水、起名改名、擇吉日等。囊括一生財運、事業、健康壽命、婚姻感情、五行缺失、一生命盤、流年運勢等各個方面。基於生辰八字，我們為您提供量身定制的風水命理解決方案，助您早日實現目標，提升生活質量。
             </p>
+            {/* SEO关键词标签 */}
+            <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">八字命理</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">风水大师</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">家居风水</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">办公风水</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">起名改名</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">择吉日</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">道家科仪</span>
+              <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">生辰八字</span>
+            </div>
             {/* 装饰性角标 */}
             <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-amber-500"></div>
             <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-amber-500"></div>
@@ -69,23 +95,23 @@ export default function Home() {
             {/* 分割线装饰 */}
             <div className="flex items-center justify-center mb-12">
               <div className="flex-1 bamboo-divider max-w-48"></div>
-              <div className="mx-8 text-2xl golden-text font-bold">✧ 特色服務 ✧</div>
+              <div className="mx-8 text-2xl golden-text font-bold">✧ 专业风水命理服务 ✧</div>
               <div className="flex-1 bamboo-divider max-w-48"></div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="relative p-6 rounded-2xl traditional-shadow bg-gradient-to-br from-amber-50/80 to-orange-50/80 border border-amber-200/50 backdrop-blur-sm group hover:scale-105 transition-all duration-300">
                 <div className="text-3xl mb-3 text-center">🔮</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">八字命理</h3>
-                <p className="text-gray-700 text-center text-base leading-relaxed">以天干地支為根基，分析事業婚姻財運健康，洞察人生軌跡</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">八字命理算命</h3>
+                <p className="text-gray-700 text-center text-base leading-relaxed">以生辰八字天干地支為根基，專業分析事業婚姻財運健康運勢，洞察人生軌跡</p>
                 <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-amber-400 opacity-50"></div>
                 <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-amber-400 opacity-50"></div>
               </div>
               
               <div className="relative p-6 rounded-2xl traditional-shadow bg-gradient-to-br from-blue-50/80 to-cyan-50/80 border border-blue-200/50 backdrop-blur-sm group hover:scale-105 transition-all duration-300">
                 <div className="text-3xl mb-3 text-center">🏠</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">風水諮詢</h3>
-                <p className="text-gray-700 text-center text-base leading-relaxed">勘察地形建築方位，調整格局達成天人合一，優化能量場</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">家居办公风水</h3>
+                <p className="text-gray-700 text-center text-base leading-relaxed">專業風水大師勘察地形建築方位，調整家居办公风水布局達成天人合一，優化能量場</p>
                 <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-blue-400 opacity-50"></div>
                 <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-blue-400 opacity-50"></div>
               </div>
@@ -100,8 +126,8 @@ export default function Home() {
               
               <div className="relative p-6 rounded-2xl traditional-shadow bg-gradient-to-br from-green-50/80 to-emerald-50/80 border border-green-200/50 backdrop-blur-sm group hover:scale-105 transition-all duration-300">
                 <div className="text-3xl mb-3 text-center">📅</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">黃道吉日</h3>
-                <p className="text-gray-700 text-center text-base leading-relaxed">干支曆法推選良辰，婚嫁動土避凶趨吉，天時地利人和</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">择吉日选良辰</h3>
+                <p className="text-gray-700 text-center text-base leading-relaxed">干支曆法專業推選結婚搬家開業黃道吉日，避凶趨吉，天時地利人和</p>
                 <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-green-400 opacity-50"></div>
                 <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-green-400 opacity-50"></div>
               </div>
@@ -110,16 +136,16 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
               <div className="relative p-6 rounded-2xl traditional-shadow bg-gradient-to-br from-red-50/80 to-rose-50/80 border border-red-200/50 backdrop-blur-sm group hover:scale-105 transition-all duration-300">
                 <div className="text-3xl mb-3 text-center">🪙</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">六爻問事</h3>
-                <p className="text-gray-700 text-center text-base leading-relaxed">投擲銅錢生成卦象，分析用神旺衰，推斷成敗吉凶</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">六爻卜卦问事</h3>
+                <p className="text-gray-700 text-center text-base leading-relaxed">易经六爻投擲銅錢生成卦象，分析用神旺衰，專業推斷事業感情成敗吉凶</p>
                 <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-red-400 opacity-50"></div>
                 <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-red-400 opacity-50"></div>
               </div>
               
               <div className="relative p-6 rounded-2xl traditional-shadow bg-gradient-to-br from-indigo-50/80 to-blue-50/80 border border-indigo-200/50 backdrop-blur-sm group hover:scale-105 transition-all duration-300">
                 <div className="text-3xl mb-3 text-center">📝</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">起名改名</h3>
-                <p className="text-gray-700 text-center text-base leading-relaxed">五格數理五行屬性，調整用字補益命理，調和運勢</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center traditional-text-shadow">宝宝起名改名</h3>
+                <p className="text-gray-700 text-center text-base leading-relaxed">根據生辰八字五格數理五行屬性，專業起名改名調整用字補益命理，調和運勢</p>
                 <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-indigo-400 opacity-50"></div>
                 <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-indigo-400 opacity-50"></div>
               </div>
@@ -148,7 +174,7 @@ export default function Home() {
           {/* 标题装饰 */}
           <div className="flex items-center justify-center mb-16">
             <div className="flex-1 bamboo-divider max-w-64"></div>
-            <div className="mx-8 text-2xl golden-text font-bold">✦ 八字命理深度解析 ✦</div>
+            <div className="mx-8 text-2xl golden-text font-bold">✦ 生辰八字命理深度解析 ✦</div>
             <div className="flex-1 bamboo-divider max-w-64"></div>
           </div>
 
@@ -284,21 +310,21 @@ export default function Home() {
           {/* 标题装饰 */}
           <div className="flex items-center justify-center mb-16">
             <div className="flex-1 bamboo-divider max-w-64"></div>
-            <div className="mx-8 text-2xl golden-text font-bold">✦ 服务方式 ✦</div>
+            <div className="mx-8 text-2xl golden-text font-bold">✦ 风水大师在线咨询服务 ✦</div>
             <div className="flex-1 bamboo-divider max-w-64"></div>
           </div>
 
           <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/50 backdrop-blur-sm">
             <p className="text-gray-700 md:text-xl leading-relaxed font-medium mb-8">
-              为了满足不同地区客户的需求，我们特别推出了便捷的线上八字解读服务。无论您身处世界的任何角落，都可以通过微信，WhatsApp、LINE
-              等线上平台，进行八字命理咨询，方便快捷。您只需选择适合的时间和平台，即可轻松与我们的一对一命理师进行交流。
+              为了满足不同地区客户的风水命理咨询需求，我们特别推出了便捷的线上八字算命和风水咨询服务。无论您身处世界的任何角落，都可以通过微信，WhatsApp、LINE
+              等线上平台，进行专业的八字命理分析和家居办公风水指导，方便快捷。您只需选择适合的时间和平台，即可轻松与我们的专业风水大师进行一对一交流咨询。
             </p>
 
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 traditional-text-shadow">
-                歡迎預約一對一咨詢服務
+                歡迎預約風水大師一對一算命咨詢服務
               </h3>
-              <p className="text-lg text-gray-700 mb-6">联系一对一咨询服务</p>
+              <p className="text-lg text-gray-700 mb-6">专业八字命理风水大师在线咨询服务</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-medium text-gray-700">LINE:</span>
@@ -316,7 +342,7 @@ export default function Home() {
               <div className="text-center">
                 <img
                   src="https://i.postimg.cc/3r9tGmZ2/line.png"
-                  alt="LINE二维码"
+                  alt="玄易阁风水大师LINE二维码 专业八字命理咨询"
                   className="w-48 h-48 mx-auto rounded-lg shadow-lg"
                 />
                 <p className="mt-2 text-sm text-gray-600">LINE 二维码</p>
@@ -324,7 +350,7 @@ export default function Home() {
               <div className="text-center">
                 <img
                   src="https://i.postimg.cc/nLCx8ncP/WhatsApp.png"
-                  alt="WhatsApp二维码"
+                  alt="玄易阁风水大师WhatsApp二维码 专业风水命理算命咨询"
                   className="w-48 h-48 mx-auto rounded-lg shadow-lg"
                 />
                 <p className="mt-2 text-sm text-gray-600">WhatsApp 二维码</p>
@@ -341,8 +367,20 @@ export default function Home() {
 
         <ArticleList articles={allPostsData} />
 
+        {/* SEO总结段落 */}
+        <section className="relative">
+          <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/30 backdrop-blur-sm">
+            <p className="text-gray-600 text-center leading-relaxed">
+              玄易阁是专业的风水命理平台，拥有资深的风水大师团队，提供全方位的八字算命、家居风水、办公风水、起名改名、择吉日等服务。
+              我们传承中华传统文化精髓，结合现代科学理念，为全球客户提供专业准确的风水命理咨询服务。
+              无论您需要生辰八字分析、风水布局调整，还是起名改名指导，我们都能为您提供个性化的解决方案，助您趋吉避凶，提升运势。
+            </p>
+          </div>
+        </section>
+
         {/* <ResourceList resources={resources} />  // 屏蔽精选资源模块 */}
       </div>
     </div>
+    </>
   )
 }
