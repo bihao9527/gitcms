@@ -70,7 +70,7 @@ export default function Home() {
           
           <div className="relative mx-auto max-w-[900px] p-8 rounded-xl traditional-shadow bg-white/50 backdrop-blur-sm">
             <p className="text-gray-700 md:text-xl leading-relaxed font-medium">
-              玄易閣傳承道教文化精髓，專精八字命理、風水勘察、道家科儀等傳統學術。提供專業的風水大師在線諮詢服務，包括家居風水、辦公風水、起名改名、擇吉日等。囊括一生財運、事業、健康壽命、婚姻感情、五行缺失、一生命盤、流年運勢等各個方面。基於生辰八字，我們為您提供量身定制的風水命理解決方案，助您早日實現目標，提升生活質量。
+              坤舆道傳承道教文化精髓，專精八字命理、風水勘察、道家科儀等傳統學術。提供專業的風水大師在線諮詢服務，包括家居風水、辦公風水、起名改名、擇吉日等。囊括一生財運、事業、健康壽命、婚姻感情、五行缺失、一生命盤、流年運勢等各個方面。基於生辰八字，我們為您提供量身定制的風水命理解決方案，助您早日實現目標，提升生活質量。
             </p>
             {/* SEO关键词标签 */}
             <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
